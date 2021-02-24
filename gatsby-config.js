@@ -13,7 +13,7 @@ module.exports = {
         path: `${__dirname}/src/images`,
       },
     },
-    {
+    /*{
      resolve: `gatsby-source-graphql`,
      options: {
        // This type will contain remote schema Query type
@@ -24,7 +24,7 @@ module.exports = {
        url: process.env.WPGRAPHQL_URL ||
           `https://www.decognizantconsult.com/graphql.`,
      },
-   },
+   },*/
     `gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`,
     {
