@@ -21,7 +21,8 @@ module.exports = {
        // This is field under which it's accessible
        fieldName: `wpgraphql`,
        // Url to query from
-       url: `${wordPressUrl}/graphql`,
+       url: process.env.WPGRAPHQL_URL ||
+          `https://www.decognizantconsult.com/graphql.`,
      },
    },
     `gatsby-transformer-sharp`,
