@@ -3,6 +3,8 @@ const {
   PostTemplateFragment,
   BlogPreviewFragment,
 } = require("../src/templates/posts/data.js")
+//const postTemplate = require.resolve(`../src/templates/posts/single.js`)
+//const blogTemplate = require.resolve(`../src/templates/posts/archive.js`)
 
 const { blogURI } = require("../globals")
 
