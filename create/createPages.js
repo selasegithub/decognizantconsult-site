@@ -3,7 +3,7 @@ const pageTemplate = require.resolve('../src/templates/pages/index.js');
  
 const GET_PAGES = `
   query GET_PAGES($first:Int $after:String) {
-    wpgraphql {
+    graphql {
       pages(
         first: $first
         after: $after
