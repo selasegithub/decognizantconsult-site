@@ -16,7 +16,7 @@ const GET_POSTS = `
     ${PostTemplateFragment}
     ${BlogPreviewFragment}
     query GET_POSTS($first:Int $after:String) {
-        graphql {
+        wpgraphql {
             posts(
                 first: $first
                 after: $after

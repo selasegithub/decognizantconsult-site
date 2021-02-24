@@ -13,6 +13,28 @@ module.exports = {
         path: `${__dirname}/src/images`,
       },
     },
+    {
+      /**
+       * First up is the WordPress source plugin that connects Gatsby
+       * to your WordPress site.
+       *
+       * visit the plugin docs to learn more
+       * https://github.com/gatsbyjs/gatsby/blob/master/packages/gatsby-source-wordpress/README.md
+       *
+       */
+      resolve: `gatsby-source-wordpress`,
+      options: {
+        // This type will contain remote schema Query type
+       typeName: `WPGraphQL`,
+       // This is field under which it's accessible
+       fieldName: `wpgraphql`,
+       // Url to query from
+        // the only required plugin option for WordPress is the GraphQL url.
+        url:
+          process.env.WPGRAPHQL_URL ||
+          `https://decognizantconsult.com/graphql`,
+      },
+    },
     /*{
      resolve: `gatsby-source-graphql`,
      options: {
