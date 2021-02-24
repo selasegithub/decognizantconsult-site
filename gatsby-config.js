@@ -25,9 +25,9 @@ module.exports = {
       resolve: `gatsby-source-wordpress`,
       options: {
         // This type will contain remote schema Query type
-       typeName: `WPGraphQL`,
+       //typeName: `WPGraphQL`,
        // This is field under which it's accessible
-       fieldName: `wpgraphql`,
+       //fieldName: `wpgraphql`,
        // Url to query from
         // the only required plugin option for WordPress is the GraphQL url.
         url:
