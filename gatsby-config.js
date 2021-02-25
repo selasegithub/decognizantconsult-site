@@ -30,12 +30,17 @@ module.exports = {
        //fieldName: `wpgraphql`,
        // Url to query from
         // the only required plugin option for WordPress is the GraphQL url.
-        url:  
+        /*url:  
           process.env.WPGRAPHQL_URL || `https://decognizantconsult.com/graphql`,
-          verbose: true,
+          verbose: true, */
+        baseUrl: `decognizantconsult.com`,
+        protocol: `https`,
+        hostingWPCOM: false,
+        useACF: true,
+        verbose: true,
         
       },
-    },
+    }, 
     /*{
      resolve: `gatsby-source-graphql`,
      options: {
