@@ -22,7 +22,7 @@ module.exports = {
        * https://github.com/gatsbyjs/gatsby/blob/master/packages/gatsby-source-wordpress/README.md
        *
        */
-      resolve: `gatsby-source-wordpress@4.0.0`,
+      resolve: `gatsby-source-wordpress`,
       options: {
         // This type will contain remote schema Query type
        //typeName: `WPGraphQL`,
